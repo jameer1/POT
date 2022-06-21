@@ -1,0 +1,163 @@
+<div id="tab-pannel">
+	<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 no-padding">
+        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 padL-0">
+            <md-input-container>
+                <label>Procurment Category</label>
+                <input type="text" value="Man Power"  readonly class="form-control">
+            </md-input-container>
+         </div>
+        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+        <md-input-container>
+        	<label>Procurment Sub Category</label>
+       			 <md-select name="weekly" ng-model="ManpowerFilterdata.procurementsub" ng-change="payableChange(ManpowerFilterdata.procurementsub)">
+				 <md-option ng-repeat="weeklist in procurementSubList" ng-value="weeklist">
+				 {{weeklist}}
+	   			</md-option>
+	  			</md-select>
+	  	</md-input-container>
+        </div>
+         <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3"> <!-- combination of Category and subcategory  -->
+         <md-input-container>
+         <label>Payable Category</label>
+           <md-select name="weekly" ng-model="ManpowerFilterdata.payableCat" ng-change="unitMeasureChange(ManpowerFilterdata.payableCat)" >
+		 <md-option ng-repeat="weeklist in payableCatg" ng-value="weeklist">
+			{{weeklist}}
+	   </md-option>
+	  </md-select>
+	  </md-input-container>
+        </div>
+        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2"> <!-- combination of Category and subcategory and payable  -->
+             <md-input-container>
+             <label>Unit of Measure</label>
+	 		 <md-select name="weekly" ng-model="ManpowerFilterdata.unitMeas"  >
+				<md-option ng-repeat="weeklist in unitMeasure" ng-value="weeklist">
+			{{weeklist}}
+	    		</md-option>
+	 		 </md-select>
+	 		 </md-input-container>         
+        </div>
+        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+            <div class="pull-right marT15">
+                <input type="submit" class="btn btn-primary btn-sm" ng-click="ManpowerSearch()" value="Search">
+            </div>
+        </div> 
+   </div>
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no-padding">
+        <div class="tabTable_2_Res_height">
+            <table class="table table-striped table-hover table-bordered tabTable_2_height">
+                <thead id="tab-head">
+                    <tr ng-if="ManpowerFilterdata.procurementsub == 'Full Time (Own Labour)'">
+                        <th>Select1</th>
+                        <th>Employee ID</th>
+                        <th>Employee First Name</th>
+                        <th>Employee Last Name</th>
+                        <th>Trade</th>
+                        <th>Date of Enrollment</th>
+                        <th>Schedule Item Id</th>
+                        <th>Schedule Item Description</th>
+                        <th>Unit Of Measure</th>
+                        <th>QTY</th>
+                        <th>Rate</th>
+                        <th>Amount</th>
+                        <th>Comments</th>
+                    </tr>
+                    
+                    <tr ng-if="ManpowerFilterdata.payableCat == 'Mobilisation Charges'">
+                        <th>Select2</th>
+                        <th>Employee ID</th>
+                        <th>Employee First Name</th>
+                        <th>Employee Last Name</th>
+                        <th>Trade</th>
+                        <th>Date of Mobilisation</th>
+                        <th>Schedule Item Id</th>
+                        <th>Schedule Item Description</th>
+                        <th>Unit Of Measure</th>
+                        <th>QTY</th>
+                        <th>Rate</th>
+                        <th>Amount</th>
+                        <th>Comments</th>
+                    </tr>
+                    
+                    <tr ng-if="ManpowerFilterdata.payableCat == 'De-Mobilisation Charges'">
+                        <th>Select3</th>
+                        <th>Employee ID</th>
+                        <th>Employee First Name</th>
+                        <th>Employee Last Name</th>
+                        <th>Trade</th>
+                        <th>Actual Date of<br> De-Mobilisation</th>
+                        <th>Schedule Item Id</th>
+                        <th>Schedule Item Description</th>
+                        <th>Unit Of Measure</th>
+                        <th>QTY</th>
+                        <th>Rate</th>
+                        <th>Amount</th>
+                        <th>Comments</th>
+                    </tr>
+                    
+                    <tr ng-if="ManpowerFilterdata.unitMeas == 'Hourly Rate'">
+                        <th>Select4</th>
+                        <th>Document Type</th>
+                        <th>Document Number</th>
+                        <th>Document Period</th>
+                        <th>Employee ID</th>
+                        <th>Employee First Name</th>
+                        <th>Employee Last Name</th>
+                        <th>Trade</th>
+                        <th>Schedule Item Id</th>
+                        <th>Schedule Item Description</th>
+                        <th>Unit Of Measure</th>
+                        <th>Wage Factor</th>
+                        <th>QTY(Hours)</th>
+                        <th>Rate</th>
+                        <th>Amount</th>
+                        <th>Comments</th>
+                    </tr>
+                    
+                    <tr ng-if="ManpowerFilterdata.unitMeas == 'Daily Rate'">
+                        <th>Select5</th>
+                        <th>Document Type</th>
+                        <th>Document Number</th>
+                        <th>Document Period</th>
+                        <th>Employee ID</th>
+                        <th>Employee First Name</th>
+                        <th>Employee Last Name</th>
+                        <th>Trade</th>
+                        <th>QTY(Days)</th>
+                        <th>Rate</th>
+                        <th>Amount</th>
+                        <th>Comments</th>
+                    </tr>
+                    
+                    <tr ng-if="ManpowerFilterdata.unitMeas == 'Monthly Rate'">
+                        <th>Select6	</th>
+                        <th>Document Type</th>
+                        <th>Document Number</th>
+                        <th>Document Period</th>
+                        <th>Employee ID</th>
+                        <th>Employee First Name</th>
+                        <th>Employee Last Name</th>
+                        <th>Trade</th>
+                        <th>Schedule Item Id</th>
+                        <th>Schedule Item Description</th>
+                        <th>Unit Of Measure</th>
+                        <th>Present Paid <br> Leave Days</th>
+                        <th>Absent and UnPaid <br> Leave Days</th>
+                        <th>Non Working <br> Days</th>
+                        <th>Gross Billable <br>Period in Days</th>
+                        <th>Non Billable <br>Period in Days</th>
+                        <th>Calendar days count<br>as per invocie period</th>
+                        <th>Gross Utilisation<br>ratio</th>
+                        <th>Net Utilisation<br>ratio</th>
+                        <th>Schedule Item Id</th>
+                        <th>Schedule Item Description</th>
+                        <th>Rate</th>
+                        <th>Amount</th>
+                        <th>Comments</th>
+                    </tr>
+                    
+                </thead>
+            </table>
+       </div>
+   </div>
+
+</div>
