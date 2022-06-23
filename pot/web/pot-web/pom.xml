@@ -72,12 +72,12 @@
 							<arguments>install</arguments>
 							<installDirectory>target</installDirectory>
 						</configuration>
-					</execution> -->
+					</execution> 
 					<execution>
 						<id>webpack build</id>
 						<goals>
 							<goal>webpack</goal>
-						</goals>
+						</goals> -->
 						<configuration>
 							<environmentVariables>
 								<build_env>prod</build_env>
