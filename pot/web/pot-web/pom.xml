@@ -66,13 +66,13 @@
 					 <id>npm install</id>
 						<goals>
 							<goal>npm</goal> 
-						</goals> -->
-						<!-- Optional configuration which provides for running any npm command -->
+						</goals> 
+						 Optional configuration which provides for running any npm command 
 						<configuration>
 							<arguments>install</arguments>
 							<installDirectory>target</installDirectory>
 						</configuration>
-					</execution>
+					</execution> -->
 					<execution>
 						<id>webpack build</id>
 						<goals>
