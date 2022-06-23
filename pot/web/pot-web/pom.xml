@@ -62,8 +62,8 @@
 						</configuration>
 					</execution>
 
-					<execution>
-					<!--	<id>npm install</id>
+		<!--	<execution>
+					 <id>npm install</id>
 						<goals>
 							<goal>npm</goal> 
 						</goals> -->
