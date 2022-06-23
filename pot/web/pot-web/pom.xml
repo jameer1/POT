@@ -77,14 +77,14 @@
 						<id>webpack build</id>
 						<goals>
 							<goal>webpack</goal>
-						</goals> -->
+						</goals> 
 						<configuration>
 							<environmentVariables>
 								<build_env>prod</build_env>
 								<originUrl>${originUrl}</originUrl>
 							</environmentVariables>
 						</configuration>
-					</execution>
+					</execution> -->
 				</executions>
 			</plugin>
 			<plugin>
