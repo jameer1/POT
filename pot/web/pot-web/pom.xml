@@ -40,13 +40,6 @@
 				<groupId>com.github.eirslett</groupId>
 				<artifactId>frontend-maven-plugin</artifactId>
 				<version>1.6</version>
-        
-        <parent>
-    <artifactId>maven-plugins</artifactId>
-    <groupId>org.apache.maven.plugins</groupId>
-    <version>35</version>
-    <relativePath />
-  </parent>
 
   <artifactId>maven-dependency-plugin</artifactId>
   <version>3.3.1-SNAPSHOT</version>
