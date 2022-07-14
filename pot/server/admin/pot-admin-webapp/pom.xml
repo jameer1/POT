@@ -83,7 +83,7 @@
 						<version>2.6</version>
 						<configuration>
 							<failOnMissingWebXml>false</failOnMissingWebXml>
-							<outputDirectory>/var/lib/jenkins/workspace</outputDirectory>
+							<outputDirectory>/workspace</outputDirectory>
 						</configuration>
 					</plugin>
 				</plugins>
