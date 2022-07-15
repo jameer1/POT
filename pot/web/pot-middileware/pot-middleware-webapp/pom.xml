@@ -100,7 +100,7 @@
 						<version>2.6</version>
 						<configuration>
 							<failOnMissingWebXml>false</failOnMissingWebXml>
-							<outputDirectory>/workspace</outputDirectory>
+							<outputDirectory>pot</outputDirectory>
 						</configuration>
 					</plugin>
 				</plugins>
