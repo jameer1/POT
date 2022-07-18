@@ -130,7 +130,7 @@
 						<version>2.6</version>
 						<configuration>
 							<failOnMissingWebXml>false</failOnMissingWebXml>
-							<outputDirectory>target</outputDirectory>
+							<outputDirectory>wars</outputDirectory>
 						</configuration>
 					</plugin>
 				</plugins>
@@ -160,7 +160,7 @@
 						<version>2.6</version>
 						<configuration>
 							<failOnMissingWebXml>false</failOnMissingWebXml>
-							<outputDirectory>target</outputDirectory>
+							<outputDirectory>wars</outputDirectory>
 						</configuration>
 					</plugin>
 				</plugins>
@@ -190,7 +190,7 @@
 						<version>2.6</version>
 						<configuration>
 							<failOnMissingWebXml>false</failOnMissingWebXml>
-							<outputDirectory>target</outputDirectory>
+							<outputDirectory>wars</outputDirectory>
 						</configuration>
 					</plugin>
 				</plugins>
@@ -220,7 +220,7 @@
 						<version>2.6</version>
 						<configuration>
 							<failOnMissingWebXml>false</failOnMissingWebXml>
-							<outputDirectory>target</outputDirectory>
+							<outputDirectory>wars</outputDirectory>
 						</configuration>
 					</plugin>
 				</plugins>
