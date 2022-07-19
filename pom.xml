@@ -400,7 +400,7 @@
 				<packaging.type>war</packaging.type>
 				<logback.loglevel>DEBUG</logback.loglevel>
 				<spring.profiles.active>dev</spring.profiles.active>
-				<!-- <originUrl>http://localhost:8080</originUrl> -->
+				<!-- <originUrl>http://localhost:8080</originUrl> --> 
 			</properties>
 			<dependencies>
 				<dependency>
@@ -456,12 +456,12 @@
 			</dependencies>
 		</profile>
 		<profile>
-			<id>15</id>
+			<id>61</id>
 			<properties>
 				<packaging.type>war</packaging.type>
 				<logback.loglevel>INFO</logback.loglevel>
 				<spring.profiles.active>prod</spring.profiles.active>
-				<originUrl>http://192.168.1.15:9280</originUrl>
+				<originUrl>http://192.168.1.61:8080</originUrl>
 			</properties>
 			<dependencies>
 				<dependency>
