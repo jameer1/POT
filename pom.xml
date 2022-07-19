@@ -400,7 +400,7 @@
 				<packaging.type>war</packaging.type>
 				<logback.loglevel>DEBUG</logback.loglevel>
 				<spring.profiles.active>dev</spring.profiles.active>
-				<!-- <originUrl>http://localhost:8080</originUrl> --> 
+				<originUrl>http://localhost:8080</originUrl> 
 			</properties>
 			<dependencies>
 				<dependency>
