@@ -17,6 +17,6 @@
 	</beans>
 
 	<beans>
-		<import resource="classpath*:META-INF/spring/tomcat-app-datasource.xml" />
+		<import resource="classpath*:META-INF/spring/app-datasource.xml" />
 	</beans>
 </beans>
